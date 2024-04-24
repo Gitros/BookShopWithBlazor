@@ -16,41 +16,52 @@
         <th></th>
     </thead>
     <tbody>
-
+        @foreach (var book in books)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Name</td>
+                <td>@book.Genre</td>
+                <td>@book.Author</td>
+                <td>@book.Price</td>
+                <td>@book.ReleaseDate</td>
+                <td></td>
+            </tr>
+        }
     </tbody>
 </table>
 
 @code {
 
-private Book[] books = new[]
+    private Book[] books = new[]
+    {
+new Book()
 {
-    new Book()
-    {
-        Id = 1,
-        Name = "The Witcher",
-        Genre = "Fantasy",
-        Author = "Andrzej Sapkowski",
-        Price = 19.99M,
-        ReleaseDate = new DateTime(2000, 2, 4)
-    },
-    new Book()
-    {
-        Id = 2,
-        Name = "Tokyo ghoul",
-        Genre = "manga",
-        Author = "Sui ishida",
-        Price = 20.99M,
-        ReleaseDate = new DateTime(2010, 2, 4)
-    },
-    new Book()
-    {
-        Id = 3,
-        Name = "Neuro Biology",
-        Genre = "Science",
-        Author = "Joe Branton",
-        Price = 8.99M,
-        ReleaseDate = new DateTime(2020, 5, 4)
-    }
+Id = 1,
+Name = "The Witcher",
+Genre = "Fantasy",
+Author = "Andrzej Sapkowski",
+Price = 19.99M,
+ReleaseDate = new DateTime(2000, 2, 4)
+},
+new Book()
+{
+Id = 2,
+Name = "Tokyo ghoul",
+Genre = "manga",
+Author = "Sui ishida",
+Price = 20.99M,
+ReleaseDate = new DateTime(2010, 2, 4)
+},
+new Book()
+{
+Id = 3,
+Name = "Neuro Biology",
+Genre = "Science",
+Author = "Joe Branton",
+Price = 8.99M,
+ReleaseDate = new DateTime(2020, 5, 4)
+}
 };
 
 }
