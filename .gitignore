@@ -1,19 +1,52 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Visual Studio Code
+.vscode/
 
-# Other files and folders
-.settings/
+# Rider
+.idea/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-*.db
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Build results
+/bin/
+/obj/
+/wwwroot/dist/
+/wwwroot/_framework/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Visual Studio files
+*.vspscc
+*.vssscc
+*.psess
+*.user
+*.suo
+*.cache
+*.dll.refresh
+*.dbmdl
+
+# Rider
+.idea/
+
+# Resharper
+_resharper/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# macOS files
+.DS_Store
+
+# Linux swap files
+*~
+
+# Logs and databases
+*.log
+*.sqlite
