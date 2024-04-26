@@ -5,10 +5,8 @@
 bin/
 obj/
 *.dll
-*.pdb
 *.exe
 *.xml
-*.json
 *.clientargs
 *.log
 *.htm
@@ -35,13 +33,6 @@ packages/
 
 # Ignore Blazor development files
 _Imports.razor.g.cs
-bin/*
-obj/*
-wwwroot/dist/
-wwwroot/_framework/
-blazor.boot.json
-*.wasm
-*.pdb
 
 # Ignore node_modules directory
 node_modules/
@@ -70,3 +61,7 @@ TestResults/
 
 # Ignore log files
 *.log
+
+# Ignore Blazor development build output
+wwwroot/dist/
+wwwroot/_framework/
