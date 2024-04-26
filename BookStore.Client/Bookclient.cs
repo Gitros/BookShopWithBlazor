@@ -19,7 +19,7 @@ public static class Bookclient
         {
             Id = 2,
             Name = "Tokyo ghoul",
-            Genre = "manga",
+            Genre = "Manga",
             Author = "Sui ishida",
             Price = 20.99M,
             ReleaseDate = new DateTime(2010, 2, 4)
