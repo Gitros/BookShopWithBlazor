@@ -1,28 +1,72 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Ignore Visual Studio files
+.vs/
 
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-*.db
-*.json
-*.gz
-*.pdb
+# Ignore build output
+bin/
+obj/
 *.dll
+*.pdb
+*.exe
+*.xml
+*.json
+*.clientargs
+*.log
+*.htm
+*.html
+*.clientbin
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+*.lock
+*.sln.ide
+
+# Ignore build artifacts
+*.cache
+*.DS_Store
+
+# Ignore Roslyn cache
+*.ide/
+
+# Ignore Blazor development files
+_Imports.razor.g.cs
+bin/*
+obj/*
+wwwroot/dist/
+wwwroot/_framework/
+blazor.boot.json
 *.wasm
-*.bin
+*.pdb
 
+# Ignore node_modules directory
+node_modules/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.pyc
 
-.fake
+# Ignore ReSharper files
+_ReSharper*/
+
+# Ignore Rider files
+.idea/
+
+# Ignore Test Results
+TestResults/
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore Mac specific files
+.DS_Store
+
+# Ignore log files
+*.log
