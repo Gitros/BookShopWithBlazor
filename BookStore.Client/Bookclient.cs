@@ -39,4 +39,9 @@ public static class Bookclient
     {
         return books.ToArray();
     }
+
+    public static void AddBook(Book book)
+    {
+        books.Add(book);
+    }
 }
