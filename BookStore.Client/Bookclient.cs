@@ -42,6 +42,7 @@ public static class Bookclient
 
     public static void AddBook(Book book)
     {
+        book.Id = books.Max(book => book.Id) + 1;
         books.Add(book);
     }
 }
