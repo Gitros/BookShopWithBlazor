@@ -15,11 +15,23 @@
             </div>
             <div class="mb-3">
                 <label for="genre" class="form-label">Genre:</label>
-                <InputText id="genre" @bind-Value="book.Genre" class="form-control"></InputText>
+                <InputSelect id="genre" @bind-Value="book.Genre" class="form-select">
+                    <option value="">Select Genre</option>
+                    <option value="Anime">Anime</option>
+                    <option value="History">History</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Science">Science</option>
+                </InputSelect>
             </div>
             <div class="mb-3">
                 <label for="author" class="form-label">Author:</label>
-                <InputText id="author" @bind-Value="book.Author" class="form-control"></InputText>
+                <InputSelect id="author" @bind-Value="book.Author" class="form-select">
+                    <option value="">Select Author</option>
+                    <option value="Andrzej Sapkowski">Andrzej Sapkowski</option>
+                    <option value="Sui Ishida">Sui Ishida</option>
+                    <option value="JK Rolling">J.K Rolling</option>
+                    <option value="Charles Darwin">Charles Darwin</option>
+                </InputSelect>
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price:</label>
