@@ -1,9 +1,16 @@
 ﻿@page "/"
 @using BookStore.Client.Models
+@inject NavigationManager NavigationManager
 
 <PageTitle>Book Catalog</PageTitle>
 
 <h1>Book Catalog</h1>
+
+<div class="row mb-4">
+    <div class="col-sm-6">
+        <button type="button" class="btn btn-primary" @onclick="CreateBook">New Book</button>
+    </div>
+</div>
 
 @if (books is null)
 {
@@ -49,4 +56,8 @@ else
         books = Bookclient.GetBooks();
     }
 
+    private void CreateBook()
+    {
+        NavigationManager.NavigateTo("/book");
+    }
 }

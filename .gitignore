@@ -65,3 +65,5 @@ TestResults/
 # Ignore Blazor development build output
 wwwroot/dist/
 wwwroot/_framework/
+
+.fake
