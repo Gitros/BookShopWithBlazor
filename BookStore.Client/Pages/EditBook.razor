@@ -30,6 +30,7 @@
                 <InputDate id="releaseDate" @bind-Value="book.ReleaseDate" class="form-control"></InputDate>
             </div>
             <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" @onclick="@Cancel">Cancel</button>
         </EditForm>
     </div>
 </div>
@@ -46,6 +47,11 @@
     private void HandleSubmit()
     {
         Bookclient.AddBook(book);
+        NavigationManager.NavigateTo("/");
+    }
+
+    private void Cancel()
+    {
         NavigationManager.NavigateTo("/");
     }
 }
