@@ -60,4 +60,10 @@ public static class Bookclient
         existingBook.Price = updatedBook.Price;
         existingBook.ReleaseDate = updatedBook.ReleaseDate;
     }
+
+    public static void DeleteBook(int id)
+    {
+        Book book = GetBook(id);
+        books.Remove(book);
+    }
 }

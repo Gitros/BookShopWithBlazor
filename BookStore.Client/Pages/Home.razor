@@ -38,7 +38,7 @@ else
                     <td>@book.Author</td>
                     <td>@book.Price</td>
                     <td>@book.ReleaseDate.ToString("MM/dd/yyyy")</td>
-                    <td></td>
+                    <td><button class="btn btn-primary" @onclick="(() => EditBook(book.Id))">Edit</button></td>
                 </tr>
             }
         </tbody>
@@ -59,5 +59,10 @@ else
     private void CreateBook()
     {
         NavigationManager.NavigateTo("/book");
+    }
+
+    private void EditBook(int id)
+    {
+        NavigationManager.NavigateTo($"/book/{id}");
     }
 }
