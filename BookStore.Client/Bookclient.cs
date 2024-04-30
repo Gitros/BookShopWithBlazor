@@ -45,4 +45,19 @@ public static class Bookclient
         book.Id = books.Max(book => book.Id) + 1;
         books.Add(book);
     }
+
+    public static Book GetBook(int id)
+    {
+        return books.Find(book => book.Id == id) ?? throw new Exception("Could not find game!");
+    }
+
+    public static void UpdateBook(Book updatedBook)
+    {
+        Book existingBook = GetBook(updatedBook.Id);
+        existingBook.Name = updatedBook.Name;
+        existingBook.Genre = updatedBook.Genre;
+        existingBook.Author = updatedBook.Author;
+        existingBook.Price = updatedBook.Price;
+        existingBook.ReleaseDate = updatedBook.ReleaseDate;
+    }
 }
